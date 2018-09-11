@@ -99,7 +99,7 @@ class ExpressPurchaseRequest extends AbstractRequest
 
         $data = $this->getBaseData();
         $data['METHOD'] = 'SetExpressCheckout';
-        $data['PAYMENTREQUEST_0_PAYMENTACTION'] = 'Authorization';
+        $data['PAYMENTREQUEST_0_PAYMENTACTION'] = 'Sale';
         $data['PAYMENTREQUEST_0_AMT'] = $this->getAmount();
         $data['PAYMENTREQUEST_0_CURRENCYCODE'] = $this->getCurrency();
         $data['PAYMENTREQUEST_0_INVNUM'] = $this->getTransactionId();
